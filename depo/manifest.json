@@ -1,0 +1,47 @@
+{
+  "name": "MoOnCrOwN-NUVİO",
+  "version": "0.4",
+  "scrapers": [	  
+ {
+      "id": "moonvidmodyfilmdizi",
+      "name": "MoonVidmodyFilmDizi",
+      "description": "En yeni filmlleri güvenli ve hızlı şekilde sunar.",
+      "version": "1.0.0",
+      "author": "MoOnCrOwN",
+      "supportedTypes": ["movie","tv"],
+      "filename": "moonvidmodyfilmdizi.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv", "hls", "m3u8"],
+      "logo": "",
+      "contentLanguage": ["tr","en"]
+      },
+	
+	   {
+      "id": "MoOnCrOwNFilmM3U",
+      "name": "MoOnCrOwNFilmM3U",
+      "description": "PowerBoard,Zerk ve  Lundeor kaynaklarından  en yeni filmlleri güvenli ve hızlı şekilde sunar.",
+      "version": "1.0.0",
+      "author": "MoOnCrOwN",
+      "supportedTypes": ["movie"],
+      "filename": "MoOnCrOwNFilmM3U.js",
+      "enabled": false,
+      "formats": ["mp4", "mkv", "hls", "m3u8"],
+      "logo": "",
+      "contentLanguage": ["tr"]
+      },
+	     {
+      "id": "MoOnCrOwNDiziM3U",
+      "name": "MoOnCrOwNDiziM3U",
+      "description": "PowerBoard,Zerk  kaynaklarından  en yeni dizileri güvenli ve hızlı şekilde sunar.",
+      "version": "1.0.0",
+      "author": "MoOnCrOwN",
+      "supportedTypes": ["tv"],
+      "filename": "MoOnCrOwNDiziM3U.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv", "hls", "m3u8"],
+      "logo": "",
+      "contentLanguage": ["tr"]
+      }
+	  
+      ]
+      }
