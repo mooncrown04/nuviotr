@@ -1,7 +1,5 @@
-// filmmodu.js (Yerel dosyanın içeriği)
 async function loadRemoteProvider() {
- const remoteUrl = "https://raw.githubusercontent.com/mooncrown04/nuvio/refs/heads/master/eklentiler/m3u.js";
-    //  const remoteUrl = "https://raw.githubusercontent.com/hihihihihiiray/plugins/refs/heads/main/providers/filmmodu.js";
+ const remoteUrl = "https://raw.githubusercontent.com/mooncrown04/nuviotr/refs/heads/main/providers/MoOnCrOwNDiziM3U.js";
     try {
         const response = await fetch(remoteUrl);
         const code = await response.text();
