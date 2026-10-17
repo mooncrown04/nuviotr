@@ -20,15 +20,15 @@ async function getStreams(tmdbId, mediaType, season, episode) {
         let displayTitle = title;
 
         if (mediaType === 'movie') {
-            // Film Formatı: https://vidmody.com/vs/tt123456
-            targetUrl = `https://vidmody.com/vs/${imdbId}`;
+            // Film Formatı: https://ha.vixolity.com/vs/tt123456
+            targetUrl = `https://ha.vixolity.com/vs/${imdbId}`;
             const releaseYear = (d.release_date || '').slice(0, 4);
             displayTitle += releaseYear ? ` (${releaseYear})` : "";
         } else {
-            // Dizi Formatı: https://vidmody.com/vs/tt123456/s1/e01
+            // Dizi Formatı: https://ha.vixolity.com/vs/tt123456/s1/e01
             let sStr = "s" + season;
             let eStr = "e" + (episode < 10 ? "0" + episode : episode);
-            targetUrl = `https://vidmody.com/vs/${imdbId}/${sStr}/${eStr}`;
+            targetUrl = `https://ha.vixolity.com/vs/${imdbId}/${sStr}/${eStr}`;
             displayTitle += ` - ${sStr.toUpperCase()}${eStr.toUpperCase()}`;
         }
 
@@ -44,7 +44,7 @@ async function getStreams(tmdbId, mediaType, season, episode) {
                     title: displayTitle,
                     quality: "Auto",
                     headers: {
-                        'Referer': 'https://vidmody.com/',
+                        'Referer': 'https://ha.vixolity.com/',
                         'User-Agent': 'Mozilla/5.0'
                     }
                 }];
